@@ -1,0 +1,16 @@
+# Project dependencies
+.cache
+node_modules
+yarn-error.log
+
+# Build directory
+/public
+.DS_Store
+
+# IDE
+.idea/
+
+.prettierrc
+
+.gatsby-config.js
+.gatsby-config.js

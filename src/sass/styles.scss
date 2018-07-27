@@ -1,0 +1,13 @@
+@import "fonts";
+@import "settings";
+@import "foundation";
+@include foundation-everything;
+
+@import "page/home";
+
+@import "component/nav";
+
+@import "misc/corner";
+
+@import "vendor/animate";
+

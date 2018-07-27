@@ -1,0 +1,46 @@
+.home {
+  background-color: $background-color;
+  color: #E85A4F;
+  height: 100vh;
+
+  h1 {
+    font-family: "Alice", serif;
+    font-size: 30px;
+    font-weight: 500;
+    color: $large-text;
+
+    @include breakpoint(medium) {
+      font-size: 56px;
+    }
+  }
+
+  p {
+    color: $large-text;
+    font-size: 15px;
+    margin-bottom: 20px;
+
+    @include breakpoint(medium) {
+      font-size: 20px;
+    }
+
+  }
+
+  .home-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+  .blink {
+    animation: blinker 1s linear infinite;
+  }
+  @keyframes blinker {
+    50% { opacity: 0; }
+  }
+
+}
+
+.spacer {
+
+}
