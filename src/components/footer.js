@@ -3,8 +3,10 @@ import React from 'react'
 class Footer extends React.Component {
   render() {
     return (
-      <div>
-        Footer
+      <div className="footer">
+        <div className="grid-container">
+          Footer placeholder
+        </div>
       </div>
   );
   }
