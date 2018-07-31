@@ -17,15 +17,18 @@ const path = require('path')
 exports.createPages = ({graphql, boundActionCreators}) => {
   const {createPage} = boundActionCreators
   return new Promise((resolve, reject) => {
-    const detailPageTemplate = path.resolve('src/templates/detail-page.js')
+    const detailPageTemplate = path.resolve('src/templates/education-detail-page.js')
+    const servicePageTemplate = path.resolve('src/templates/service-detail-page.js')
+    const communityPageTemplate = path.resolve('src/templates/community-detail-page.js')
+    const celebrationPageTemplate = path.resolve('src/templates/celebration-detail-page.js')
     resolve(
-      // add query for slug
       graphql(`
         {
           allContentfulEducation (limit: 100) {
             edges {
               node {
                 id
+                slug
               }
             }
           }
@@ -36,15 +39,89 @@ exports.createPages = ({graphql, boundActionCreators}) => {
         }
         result.data.allContentfulEducation.edges.forEach((edge) => {
           createPage ({
-            path: edge.node.id,
+            path: "education/" + edge.node.slug,
             component: detailPageTemplate,
             context: {
               id: edge.node.id
             }
           })
         })
-        return
+      }),
+    graphql(`
+        {
+          allContentfulServiceOpportunities(limit: 100) {
+            edges {
+              node {
+                id
+                slug
+              }
+            }
+          }
+        }
+      `).then((result) => {
+      if (result.errors) {
+        reject(result.errors)
+      }
+      result.data.allContentfulServiceOpportunities.edges.forEach((edge) => {
+        createPage ({
+          path: "service/" + edge.node.slug,
+          component: servicePageTemplate,
+          context: {
+            id: edge.node.id
+          }
+        })
       })
+    }),
+      graphql(`
+        {
+          allContentfulCommunityAction(limit: 100) {
+            edges {
+              node {
+                id
+                slug
+              }
+            }
+          }
+        }
+      `).then((result) => {
+        if (result.errors) {
+          reject(result.errors)
+        }
+        result.data.allContentfulCommunityAction.edges.forEach((edge) => {
+          createPage ({
+            path: "community/" + edge.node.slug,
+            component: communityPageTemplate,
+            context: {
+              id: edge.node.id
+            }
+          })
+        })
+      }),
+      graphql(`
+        {
+          allContentfulCelebrations(limit: 100) {
+            edges {
+              node {
+                id
+                slug
+              }
+            }
+          }
+        }
+      `).then((result) => {
+        if (result.errors) {
+          reject(result.errors)
+        }
+        result.data.allContentfulCelebrations.edges.forEach((edge) => {
+          createPage ({
+            path: "celebrations/" + edge.node.slug,
+            component: celebrationPageTemplate,
+            context: {
+              id: edge.node.id
+            }
+          })
+        })
+      }),
     )
   })
 }

@@ -2,16 +2,16 @@ import React from 'react'
 
 class Education extends React.Component {
   render(){
+    console.log(this)
     const pageContent = this.props.data.allContentfulEducationPage.edges
     const educationContent = this.props.data.allContentfulEducation.edges
 
     const createList = educationContent.map((education) =>
       <div key={education.node.eventName} >
-        <h2>{education.node.eventName}</h2>
+        <a href={"/education/" + education.node.slug}><h2>{education.node.eventName}</h2></a>
         <p>{education.node.date.substring(0,10)}</p>
-        <h5>{education.node.teaser}</h5>
-        <p>{education.node.eventDetails.eventDetails}</p>
-        <p><a href={education.node.url}>{education.node.url}</a></p>
+        <p>{education.node.teaser}</p>
+        {/*<p><a href={education.node.url}>{education.node.url}</a></p>*/}
         <p>{education.node.publishingChurch}</p>
       </div>
     )
@@ -37,17 +37,15 @@ export const query = graphql`
         }
       }
     }
-    allContentfulEducation {
+    allContentfulEducation(sort: {fields: [createdAt] order: ASC}){
       edges {
        node {
           eventName
           teaser
           date
           url
-          eventDetails {
-           eventDetails
-          }
           publishingChurch
+          slug
         }
       }
     }
