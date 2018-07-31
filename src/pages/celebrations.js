@@ -7,11 +7,10 @@ class Celebration extends React.Component {
 
     const createList = celebrationContent.map((celebration) =>
       <div key={celebration.node.eventName} >
-        <h2>{celebration.node.eventName}</h2>
+        <a href={"/celebrations/" + celebration.node.slug}><h2>{celebration.node.eventName}</h2></a>
         <p>{celebration.node.date.substring(0,10)}</p>
         <h5>{celebration.node.teaser}</h5>
-        <p>{celebration.node.eventDetails.eventDetails}</p>
-        <p><a href={celebration.node.url}>{celebration.node.url}</a></p>
+        {/*<p><a href={celebration.node.url}>{celebration.node.url}</a></p>*/}
         <p>{celebration.node.publishingChurch}</p>
       </div>
     )
@@ -37,17 +36,15 @@ export const query = graphql`
         }
       }
     }
-    allContentfulCelebrations {
+    allContentfulCelebrations(sort: {fields: [createdAt] order: ASC}) {
       edges {
        node {
           eventName
           teaser
           date
           url
-          eventDetails {
-           eventDetails
-          }
           publishingChurch
+          slug
         }
       }
     }

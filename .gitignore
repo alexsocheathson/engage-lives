@@ -13,4 +13,4 @@ yarn-error.log
 .prettierrc
 
 # Gatsby config and stuff
-gatsby-*
+gatsby-config.js

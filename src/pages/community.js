@@ -7,11 +7,10 @@ class CommunityAction extends React.Component {
 
     const createList = communityContent.map((community) =>
       <div key={community.node.eventName} >
-        <h2>{community.node.eventName}</h2>
+        <a href={"/community/" + community.node.slug}><h2>{community.node.eventName}</h2></a>
         <p>{community.node.date.substring(0,10)}</p>
         <h5>{community.node.teaser}</h5>
-        <p>{community.node.eventDetails.eventDetails}</p>
-        <p><a href={community.node.url}>{community.node.url}</a></p>
+        {/*<p><a href={community.node.url}>{community.node.url}</a></p>*/}
         <p>{community.node.publishingChurch}</p>
       </div>
     )
@@ -37,17 +36,15 @@ export const query = graphql`
         }
       }
     }
-    allContentfulCommunityAction {
+    allContentfulCommunityAction (sort: {fields: [createdAt] order: ASC}) {
       edges {
        node {
           eventName
           teaser
           date
           url
-          eventDetails {
-           eventDetails
-          }
           publishingChurch
+          slug
         }
       }
     }

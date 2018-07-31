@@ -7,11 +7,10 @@ class Service extends React.Component {
 
     const createList = serviceContent.map((service) =>
       <div key={service.node.eventName} >
-        <h2>{service.node.eventName}</h2>
+        <a href={"/service/" + service.node.slug}><h2>{service.node.eventName}</h2></a>
         <p>{service.node.date.substring(0,10)}</p>
         <h5>{service.node.teaser}</h5>
-        <p>{service.node.eventDetails.eventDetails}</p>
-        <p><a href={service.node.url}>{service.node.url}</a></p>
+        {/*<p><a href={service.node.url}>{service.node.url}</a></p>*/}
         <p>{service.node.publishingChurch}</p>
       </div>
     )
@@ -36,17 +35,15 @@ export const query = graphql`
         }
       }
     }
-    allContentfulServiceOpportunities {
+    allContentfulServiceOpportunities(sort: {fields: [createdAt] order: ASC}) {
       edges {
        node {
           eventName
           teaser
           date
           url
-          eventDetails {
-           eventDetails
-          }
           publishingChurch
+          slug
         }
       }
     }

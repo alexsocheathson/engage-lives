@@ -17,8 +17,7 @@ class IndexPage extends React.Component {
                   <div className="top-corner"></div>
                   <div className="left-corner"></div>
                 </div>
-                <h1>A <span className="animated fadeInUp delay-1s">shared</span> area ministry of <span
-                  className="blink">-</span></h1>
+                <h1>A <span className="animated fadeInUp delay-1s">shared</span> area ministry of <span>-</span></h1>
                 <p>Como Park Lutheran Church, Falcon Heights Church UCC, and New Life Presbyterian Church</p>
               </div>
             </div>
