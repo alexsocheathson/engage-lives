@@ -1,8 +1,6 @@
 {
-  "name": "gatsby-starter-default",
-  "description": "Gatsby default starter",
+  "name": "engage-lives",
   "version": "1.0.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
     "foundation-sites": "^6.5.0-rc.2",
     "gatsby": "^1.9.277",
@@ -27,9 +25,5 @@
   },
   "devDependencies": {
     "prettier": "^1.13.7"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
   }
 }
