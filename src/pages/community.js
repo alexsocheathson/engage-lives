@@ -2,7 +2,7 @@ import React from 'react'
 
 class CommunityAction extends React.Component {
   render(){
-    const pageContent = this.props.data.allContentfulCommunityActionPage.edges
+    const pageContent = this.props.data.allContentfulLearningAndGrowthPage.edges
     const communityContent = this.props.data.allContentfulCommunityAction.edges
 
     const createList = communityContent.map((community) =>
@@ -29,7 +29,7 @@ export default CommunityAction
 
 export const query = graphql`
   query CommunityActionQuery {
-    allContentfulCommunityActionPage {
+    allContentfulLearningAndGrowthPage {
       edges {
         node {
           heading

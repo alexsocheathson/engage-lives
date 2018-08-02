@@ -18,7 +18,7 @@ class Education extends React.Component {
 
     return(
       <div>
-        <h1>Education</h1>
+        <h1>Worship</h1>
         <h4>{pageContent["0"].node.heading}</h4>
         {createList}
       </div>

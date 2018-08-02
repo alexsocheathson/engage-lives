@@ -17,8 +17,9 @@ class IndexPage extends React.Component {
                   <div className="top-corner"></div>
                   <div className="left-corner"></div>
                 </div>
-                <h1>A <span className="animated fadeInUp delay-1s">shared</span> area ministry of <span>-</span></h1>
-                <p>Como Park Lutheran Church, Falcon Heights Church UCC, and New Life Presbyterian Church</p>
+                <h1>A <span className="animated fadeInUp delay-1s">shared</span> area ministry</h1>
+                <p>by Como Park Lutheran Church, Falcon Heights Church UCC, and New Life Presbyterian Church PCUSA</p>
+                {/* <p>Everything listed below is open to the entire community without regard to personal belief or church membership. Come on, join us. It’ll be fun. </p> */}
               </div>
             </div>
           </div>
