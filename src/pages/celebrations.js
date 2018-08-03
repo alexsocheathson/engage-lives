@@ -7,9 +7,9 @@ class Celebration extends React.Component {
 
     const createList = celebrationContent.map((celebration) =>
       <div key={celebration.node.eventName} >
-        <a href={"/celebrations/" + celebration.node.slug}><h2>{celebration.node.eventName}</h2></a>
+        <h5>{celebration.node.eventName}</h5>
         <p>{celebration.node.date.substring(0,10)}</p>
-        <h5>{celebration.node.teaser}</h5>
+        <h5>{celebration.node.eventDetails.eventDetails}</h5>
         {/*<p><a href={celebration.node.url}>{celebration.node.url}</a></p>*/}
         <p>{celebration.node.publishingChurch}</p>
       </div>
@@ -17,7 +17,7 @@ class Celebration extends React.Component {
 
     return(
       <div>
-        <h1>Celebration</h1>
+        <h3>Celebration</h3>
         <h4>{pageContent["0"].node.heading}</h4>
         {createList}
       </div>
@@ -40,11 +40,12 @@ export const query = graphql`
       edges {
        node {
           eventName
-          teaser
+          eventDetails{
+            eventDetails
+          }
           date
           url
           publishingChurch
-          slug
         }
       }
     }
