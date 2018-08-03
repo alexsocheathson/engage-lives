@@ -15,7 +15,7 @@ class Header extends React.Component {
             <div className="top-bar-right">
               <div className="menu">
                 <li><Link to="/education/">Worship</Link></li>
-                <li><Link to="/">Wellness</Link></li>
+                <li><Link to="/wellness/">Wellness</Link></li>
                 <li><Link to="/celebrations/">Celebrations</Link></li>
                 <li><Link to="/community/">Learning and Growth</Link></li>
                 <li><Link to="/service/">Service Opportunities</Link></li>

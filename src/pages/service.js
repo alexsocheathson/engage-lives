@@ -7,11 +7,11 @@ class Service extends React.Component {
 
     const createList = serviceContent.map((service) =>
       <div key={service.node.eventName} >
-        <a href={"/service/" + service.node.slug}><h2>{service.node.eventName}</h2></a>
+        <h2>{service.node.eventName}</h2>
         <p>{service.node.date.substring(0,10)}</p>
-        <h5>{service.node.teaser}</h5>
-        {/*<p><a href={service.node.url}>{service.node.url}</a></p>*/}
-        <p>{service.node.publishingChurch}</p>
+        <h5>{service.node.eventDetails.eventDetails}</h5>
+        <p><a href={service.node.url}>{service.node.url}</a></p>
+        <p>{service.node.locationChurch}</p>
       </div>
     )
     return(
@@ -39,11 +39,12 @@ export const query = graphql`
       edges {
        node {
           eventName
-          teaser
           date
           url
-          publishingChurch
-          slug
+          eventDetails {
+            eventDetails
+          }
+          locationChurch
         }
       }
     }

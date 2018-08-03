@@ -30,17 +30,4 @@
 
 // export default ServiceDetailPage
 
-// export const pageQuery = graphql`
-//   query serviceDetailQuery($id: String!){
-//     contentfulServiceOpportunities(id: {eq: $id}) {
-//       eventName
-//       teaser
-//       date
-//       url
-//       eventDetails {
-//        eventDetails
-//       }
-//       publishingChurch
-//     }
-//   }
-// `
+// Deleted Queries 
