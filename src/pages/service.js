@@ -12,6 +12,8 @@ class Service extends React.Component {
         <h5>{service.node.eventDetails.eventDetails}</h5>
         <p><a href={service.node.url}>{service.node.url}</a></p>
         <p>{service.node.locationChurch}</p>
+        {/* TODO: Remove inline style */}
+        <img src={service.node.image.file.url} alt="event image" width="400px;"/>
       </div>
     )
     return(
@@ -45,6 +47,11 @@ export const query = graphql`
             eventDetails
           }
           locationChurch
+          image {
+            file {
+              url
+            }
+          }
         }
       }
     }

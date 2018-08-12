@@ -9,7 +9,7 @@ class Header extends React.Component {
           <div className="top-bar">
             <div className="top-bar-left">
               <div className="logo">
-                <a href="/">Engage!</a>
+                <a href="/">Engage Lives</a>
               </div>
             </div>
             <div className="top-bar-right">

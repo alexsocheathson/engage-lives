@@ -11,6 +11,8 @@ class CommunityAction extends React.Component {
         <p>{community.node.date.substring(0,10)}</p>
         <h5>{community.node.eventDetails.eventDetails}</h5>
         <p>{community.node.locationChurch}</p>
+        {/* TODO: Remove inline style */}
+        <img src={community.node.image.file.url} alt="event image" width="400px;"/>
       </div>
     )
 
@@ -45,6 +47,11 @@ export const query = graphql`
             eventDetails
           }
           locationChurch
+          image {
+            file {
+              url
+            }
+          }
         }
       }
     }

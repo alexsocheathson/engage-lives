@@ -12,6 +12,8 @@ class Celebration extends React.Component {
         <h5>{celebration.node.eventDetails.eventDetails}</h5>
         {/*<p><a href={celebration.node.url}>{celebration.node.url}</a></p>*/}
         <p>{celebration.node.publishingChurch}</p>
+        {/* TODO: Remove inline style */}
+        <img src={celebration.node.image.file.url} alt="event image" width="400px;"/>
       </div>
     )
 
@@ -46,6 +48,11 @@ export const query = graphql`
           date
           url
           publishingChurch
+          image {
+            file {
+              url
+            }
+          }
         }
       }
     }

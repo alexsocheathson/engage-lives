@@ -11,6 +11,8 @@ class Wellness extends React.Component {
         <h5>{wellness.node.eventTitle}</h5>
         <p>{wellness.node.description}</p>
         <a href={wellness.node.url}><p>{wellness.node.url}</p></a>
+        {/* TODO: Remove inline style */}
+        <img src={wellness.node.image.file.url} alt="event image" width="400px;"/>
       </div>
     )
 
@@ -42,6 +44,11 @@ export const query = graphql`
           description
           location
           url
+          image {
+            file {
+              url
+            }
+          }
         }
       }
     }
