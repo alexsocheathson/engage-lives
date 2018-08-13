@@ -1,0 +1,21 @@
+.tile {
+    background-color: #f5f1ed;
+
+    @include breakpoint(large) {
+        border:40px solid $white;
+        // border-right: 50px solid $white;
+        padding: 60px 0 60px 0;
+        text-align: center;
+
+    }
+
+    .church {
+        font-size: 20px;
+        padding: 10px;
+    }
+
+    .time {
+        font-size: 20px;
+        font-weight: 300;
+    }
+}
