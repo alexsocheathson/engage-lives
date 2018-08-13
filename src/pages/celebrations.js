@@ -6,10 +6,10 @@ class Celebration extends React.Component {
     const celebrationContent = this.props.data.allContentfulCelebrations.edges
 
     const createList = celebrationContent.map((celebration) =>
-      <div key={celebration.node.eventName} >
-        <h5>{celebration.node.eventName}</h5>
+      <div key={celebration.node.eventName}>
+        <p>{celebration.node.eventName}</p>
         <p>{celebration.node.date.substring(0,10)}</p>
-        <h5>{celebration.node.eventDetails.eventDetails}</h5>
+        <p>{celebration.node.eventDetails.eventDetails}</p>
         {/*<p><a href={celebration.node.url}>{celebration.node.url}</a></p>*/}
         <p>{celebration.node.publishingChurch}</p>
         {/* TODO: Remove inline style */}
@@ -19,9 +19,20 @@ class Celebration extends React.Component {
 
     return(
       <div>
-        <h3>Celebration</h3>
-        <h4>{pageContent["0"].node.heading}</h4>
-        {createList}
+        <div className="banner">
+          <div className="grid-container">
+            <h3>Celebration</h3>
+            <p>{pageContent["0"].node.heading}</p>
+          </div>
+        </div>
+        <div className="grid-container">
+          <div className="header">
+            <p>Events</p>
+          </div>
+          <div className="grid-x">
+            {createList}
+          </div>
+        </div>
       </div>
     );
   }

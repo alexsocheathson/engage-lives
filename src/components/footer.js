@@ -8,6 +8,7 @@ class Footer extends React.Component {
         <div className="grid-container">
           Footer placeholder
           <Link to="/about">About Us</Link>
+          alexson.io
         </div>
       </div>
   );

@@ -18,9 +18,18 @@ class Service extends React.Component {
     )
     return(
         <div>
-          <h1>Service Opportunity</h1>
-          <h4>{pageContent["0"].node.heading}</h4>
-          {createList}
+          <div className="banner">
+            <div className="grid-container">
+              <h3>Service Opportunity</h3>
+              <p>{pageContent["0"].node.heading}</p>
+            </div>
+          </div>
+          <div className="header">
+            <p>Events</p>
+          </div>
+          <div className="grid-x">
+            {createList}
+          </div>
         </div>
     );
   }
