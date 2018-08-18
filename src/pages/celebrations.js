@@ -5,6 +5,7 @@ class Celebration extends React.Component {
     const pageContent = this.props.data.allContentfulCelebrationPage.edges
     const celebrationContent = this.props.data.allContentfulCelebrations.edges
 
+<<<<<<< HEAD
     const createList = celebrationContent.map(celebration => (
       <div key={celebration.node.eventName} className="cell small-12">
         <div className="grid-x event animated fadeInUp delay-1s">
@@ -26,6 +27,17 @@ class Celebration extends React.Component {
             <a href={celebration.node.url}>{celebration.node.url}</a>
           </div>
         </div>
+=======
+    const createList = celebrationContent.map((celebration) =>
+      <div key={celebration.node.eventName}>
+        <p>{celebration.node.eventName}</p>
+        <p>{celebration.node.date.substring(0,10)}</p>
+        <p>{celebration.node.eventDetails.eventDetails}</p>
+        {/*<p><a href={celebration.node.url}>{celebration.node.url}</a></p>*/}
+        <p>{celebration.node.publishingChurch}</p>
+        {/* TODO: Remove inline style */}
+        <img src={celebration.node.image.file.url} alt="event image" width="400px;"/>
+>>>>>>> c628cec6ab893c7204e4c9a1989d12bbe122049e
       </div>
     ))
 
@@ -34,16 +46,26 @@ class Celebration extends React.Component {
         <div className="banner">
           <div className="grid-container">
             <h3>Celebration</h3>
+<<<<<<< HEAD
             <p className="animated fadeIn slow">
               {pageContent['0'].node.heading}
             </p>
+=======
+            <p>{pageContent["0"].node.heading}</p>
+>>>>>>> c628cec6ab893c7204e4c9a1989d12bbe122049e
           </div>
         </div>
         <div className="grid-container">
           <div className="header">
             <p>Events</p>
           </div>
+<<<<<<< HEAD
           <div className="grid-x">{createList}</div>
+=======
+          <div className="grid-x">
+            {createList}
+          </div>
+>>>>>>> c628cec6ab893c7204e4c9a1989d12bbe122049e
         </div>
       </div>
     )

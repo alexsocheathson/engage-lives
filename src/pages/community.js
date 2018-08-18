@@ -26,7 +26,11 @@ class CommunityAction extends React.Component {
       <div className="banner">
         <div className="grid-container">
           <h3>Learning and Growth</h3>
+<<<<<<< HEAD
           <p className="animated fadeIn slow">{pageContent["0"].node.heading}</p>
+=======
+          <p>{pageContent["0"].node.heading}</p>
+>>>>>>> c628cec6ab893c7204e4c9a1989d12bbe122049e
         </div>
       </div>
       <div className="grid-container">

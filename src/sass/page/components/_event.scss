@@ -1,4 +1,5 @@
 .event {
+<<<<<<< HEAD
   background-color: #f5f1ed;
   text-align: center;
   width: 100%;
@@ -50,3 +51,46 @@
     margin-bottom: 30px;
   }
 }
+=======
+    background-color: #f5f1ed;
+    text-align: center;
+
+    .title {
+        font-size: 30px;
+        line-height: 0.74;
+        margin-top: 30px;
+    }
+
+    .flex-row {
+        display: flex;
+        align-content: center;
+        margin-top: 40px;
+        margin-bottom: 30px; 
+
+        .description {
+            flex: 1;
+            font-size: 20px;
+            font-weight: 300;
+            margin: auto 70px;
+        }
+
+        img {
+            width: 300px;
+            height: 100%;
+            display: flex;
+            margin: auto 70px;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+    }
+
+    .url {
+        color: #047911;
+        font-weight: 300;
+        font-size: 15px;
+        margin-bottom: 30px; 
+    }
+
+}
+>>>>>>> c628cec6ab893c7204e4c9a1989d12bbe122049e

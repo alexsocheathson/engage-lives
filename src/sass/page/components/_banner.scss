@@ -1,4 +1,5 @@
 .banner {
+<<<<<<< HEAD
   padding: 0px;
   width: 100%;
   background-color: #f5f1ed;
@@ -29,3 +30,29 @@
     }
   }
 }
+=======
+    padding: 0px;
+    width: 100%;
+    // height: 200px;
+    background-color: #f5f1ed;
+    text-align: center;
+
+    h3 {
+        font-family: CormorantInfant;
+        font-size: 80px;
+        font-weight: 500;
+        color: $large-text;
+        padding-top: 27px;
+        margin-bottom: 0;
+    }
+
+    p {
+        font-size: 28px;
+        font-weight: 300;
+        color: $small-text;
+        padding-bottom: 25px; 
+        margin-bottom: 0;
+    }
+
+}
+>>>>>>> c628cec6ab893c7204e4c9a1989d12bbe122049e

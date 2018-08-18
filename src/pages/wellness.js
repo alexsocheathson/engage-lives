@@ -7,6 +7,7 @@ class Wellness extends React.Component {
     const wellnessContent = this.props.data.allContentfulWellness.edges
 
     const createList = wellnessContent.map((wellness) =>
+<<<<<<< HEAD
       <div key={wellness.node.eventTitle} className="cell small-12">
           <div className="grid-x event animated fadeInUp delay-1s">
             <p className="cell small-12 title">{wellness.node.eventTitle}</p>
@@ -20,6 +21,19 @@ class Wellness extends React.Component {
               <a href={wellness.node.url}>{wellness.node.url}</a>
             </div>
           </div>
+=======
+      <div key={wellness.node.eventTitle} className="cell small-12 event animated fadeInUp delay-1s">
+        <p className="title">{wellness.node.eventTitle}</p>
+        <div className="flex-row">
+          <div className="description">
+            <p>{wellness.node.description}</p>
+          </div>
+          <img src={wellness.node.image.file.url} alt="event image" />
+        </div>
+        <div className="url">
+          <a href={wellness.node.url}>{wellness.node.url}</a>
+        </div>
+>>>>>>> c628cec6ab893c7204e4c9a1989d12bbe122049e
       </div>
 
     )
