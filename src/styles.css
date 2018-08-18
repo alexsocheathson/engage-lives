@@ -5946,7 +5946,6 @@ html.is-reveal-open {
   height: 100vh; }
   .home h1 {
     font-family: CormorantInfant;
-<<<<<<< HEAD
     font-size: 40px;
     font-weight: 500;
     color: #505050;
@@ -5964,19 +5963,6 @@ html.is-reveal-open {
     color: #505050;
     font-size: 10px;
     margin-top: 25px;
-=======
-    font-size: 100px;
-    font-weight: 500;
-    color: #505050;
-    text-align: center; }
-    @media print, screen and (min-width: 40em) {
-      .home h1 {
-        margin-top: 105px; } }
-  .home p {
-    color: #505050;
-    font-size: 36px;
-    margin-top: 23px;
->>>>>>> c628cec6ab893c7204e4c9a1989d12bbe122049e
     text-align: center;
     font-weight: 300; }
     @media print, screen and (min-width: 40em) {
@@ -6004,47 +5990,30 @@ html.is-reveal-open {
   text-align: center; }
   .banner h3 {
     font-family: CormorantInfant;
-<<<<<<< HEAD
     font-size: 60px;
-=======
-    font-size: 80px;
->>>>>>> c628cec6ab893c7204e4c9a1989d12bbe122049e
     font-weight: 500;
     color: #505050;
     padding-top: 27px;
     margin-bottom: 0; }
-<<<<<<< HEAD
     @media print, screen and (min-width: 40em) {
       .banner h3 {
         font-size: 80px; } }
   .banner p {
     font-size: 20px;
-=======
-  .banner p {
-    font-size: 28px;
->>>>>>> c628cec6ab893c7204e4c9a1989d12bbe122049e
     font-weight: 300;
     color: #505050;
     padding-bottom: 25px;
     margin-bottom: 0; }
-<<<<<<< HEAD
     @media print, screen and (min-width: 40em) {
       .banner p {
         font-size: 30px; } }
-=======
->>>>>>> c628cec6ab893c7204e4c9a1989d12bbe122049e
 
 .header {
   margin-bottom: 10px; }
   .header p {
     border-bottom: solid 1px #f5f1ed;
-<<<<<<< HEAD
     margin-top: 35px;
     font-size: 20px;
-=======
-    margin-top: 40px;
-    font-size: 40px;
->>>>>>> c628cec6ab893c7204e4c9a1989d12bbe122049e
     display: -webkit-inline-box;
     display: -webkit-inline-flex;
     display: -ms-inline-flexbox;
@@ -6057,7 +6026,6 @@ html.is-reveal-open {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center; }
-<<<<<<< HEAD
     @media print, screen and (min-width: 64em) {
       .header p {
         font-size: 30px; } }
@@ -6077,19 +6045,6 @@ html.is-reveal-open {
     @media print, screen and (min-width: 64em) {
       .tile .church {
         margin-top: 0; } }
-=======
-
-.tile {
-  background-color: #f5f1ed; }
-  @media print, screen and (min-width: 64em) {
-    .tile {
-      border: 40px solid #fefefe;
-      padding: 60px 0 60px 0;
-      text-align: center; } }
-  .tile .church {
-    font-size: 20px;
-    padding: 10px; }
->>>>>>> c628cec6ab893c7204e4c9a1989d12bbe122049e
   .tile .time {
     font-size: 20px;
     font-weight: 300; }
@@ -6101,30 +6056,20 @@ html.is-reveal-open {
   text-align: center; }
   .banner h3 {
     font-family: CormorantInfant;
-<<<<<<< HEAD
     font-size: 60px;
-=======
-    font-size: 80px;
->>>>>>> c628cec6ab893c7204e4c9a1989d12bbe122049e
     font-weight: 500;
     color: #505050;
     padding-top: 27px;
     margin-bottom: 0; }
-<<<<<<< HEAD
     @media print, screen and (min-width: 40em) {
       .banner h3 {
         font-size: 80px; } }
   .banner p {
     font-size: 20px;
-=======
-  .banner p {
-    font-size: 28px;
->>>>>>> c628cec6ab893c7204e4c9a1989d12bbe122049e
     font-weight: 300;
     color: #505050;
     padding-bottom: 25px;
     margin-bottom: 0; }
-<<<<<<< HEAD
     @media print, screen and (min-width: 40em) {
       .banner p {
         font-size: 30px; } }
@@ -6134,17 +6079,10 @@ html.is-reveal-open {
   text-align: center;
   width: 100%;
   margin-bottom: 60px; }
-=======
-
-.event {
-  background-color: #f5f1ed;
-  text-align: center; }
->>>>>>> c628cec6ab893c7204e4c9a1989d12bbe122049e
   .event .title {
     font-size: 30px;
     line-height: 0.74;
     margin-top: 30px; }
-<<<<<<< HEAD
   .event .date {
     font-size: 20px;
     font-weight: 300; }
@@ -6165,43 +6103,6 @@ html.is-reveal-open {
           padding-right: 70px;
           display: inline-block; } }
   .event a,
-=======
-  .event .flex-row {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-align-content: center;
-        -ms-flex-line-pack: center;
-            align-content: center;
-    margin-top: 40px;
-    margin-bottom: 30px; }
-    .event .flex-row .description {
-      -webkit-box-flex: 1;
-      -webkit-flex: 1;
-          -ms-flex: 1;
-              flex: 1;
-      font-size: 20px;
-      font-weight: 300;
-      margin: auto 70px; }
-    .event .flex-row img {
-      width: 300px;
-      height: 100%;
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
-      margin: auto 70px;
-      -webkit-box-pack: center;
-      -webkit-justify-content: center;
-          -ms-flex-pack: center;
-              justify-content: center;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -webkit-flex-direction: column;
-          -ms-flex-direction: column;
-              flex-direction: column; }
->>>>>>> c628cec6ab893c7204e4c9a1989d12bbe122049e
   .event .url {
     color: #047911;
     font-weight: 300;

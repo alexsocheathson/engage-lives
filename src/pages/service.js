@@ -29,7 +29,6 @@ class Service extends React.Component {
           </div>
         </div>
       </div>
-<<<<<<< HEAD
     ))
     return (
       <div>
@@ -46,23 +45,6 @@ class Service extends React.Component {
             <p>Events</p>
           </div>
           <div className="grid-x">{createList}</div>
-=======
-    )
-    return(
-        <div>
-          <div className="banner">
-            <div className="grid-container">
-              <h3>Service Opportunity</h3>
-              <p>{pageContent["0"].node.heading}</p>
-            </div>
-          </div>
-          <div className="header">
-            <p>Events</p>
-          </div>
-          <div className="grid-x">
-            {createList}
-          </div>
->>>>>>> c628cec6ab893c7204e4c9a1989d12bbe122049e
         </div>
       </div>
     )
