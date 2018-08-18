@@ -13,11 +13,11 @@ const Layout = ({ children, data }) => (
         { name: 'keywords', content: 'sample, something' },
       ]}
     />
+    <div className="view">
     <Header siteTitle={data.site.siteMetadata.title} />
-    <div className='grid-container'>
       {children()}
     </div>
-    <Footer/>
+    {/* <Footer/> */}
   </div>
 )
 

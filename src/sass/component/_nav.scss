@@ -6,20 +6,21 @@
   //z-index: 100;
 
   .logo {
-    font-size: 30px;
+    font-size: 20px;
+
+    @include breakpoint(medium){
+      font-size: 30px;
+    }
 
     @include breakpoint(large){
       font-size: 45px;
-      //font-weight: 400;
     }
 
   }
 
   a {
     color: $small-text;
-    //margin-left: 2px;
-    font-weight: 600;
-    //align-content: right;
+    font-weight: 500;
   }
 
   .top-bar-right {
@@ -32,7 +33,7 @@
 
 
     @include breakpoint(medium) {
-      font-size: 12px;
+      font-size: 10px;
       display: inline-block;
 
       .mobile {

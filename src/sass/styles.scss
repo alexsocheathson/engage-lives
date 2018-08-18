@@ -4,7 +4,15 @@
 @include foundation-everything;
 
 @import "page/home";
+@import "page/view";
 
+@import "page/components/banner";
+@import "page/components/header";
+@import "page/components/tile";
+@import "page/components/banner";
+@import "page/components/event";
+
+@import "component/footer";
 @import "component/nav";
 
 @import "misc/corner";

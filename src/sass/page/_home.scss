@@ -1,52 +1,49 @@
 .home {
   background-color: $background-color;
-  color: #E85A4F;
   height: 100vh;
 
   h1 {
-    width: 968px;
-    height: 121px;
     font-family: CormorantInfant;
-    font-size: 100px;
-    font-weight: bold;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.21;
-    letter-spacing: normal;
+    font-size: 40px;
+    font-weight: 500;
     color: $large-text;
+    text-align: center;
+    margin-top: 20px;
 
     @include breakpoint(medium) {
-      font-size: 56px;
+      margin-top: 50px;
+      font-size: 70px;
+    }
+
+    @include breakpoint(large) {
+      margin-top: 105px;
+      font-size: 100px;
     }
   }
 
   p {
     color: $large-text;
-    font-size: 15px;
-    margin-bottom: 20px;
+    font-size: 10px;
+    margin-top: 25px;
+    // margin-bottom: 20px;
+    text-align: center;
+    font-weight: 300;
 
     @include breakpoint(medium) {
       font-size: 20px;
     }
 
+    @include breakpoint(large) {
+      font-size: 35px;
+    }
+
   }
 
   .home-image {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
+    position:absolute;
+    left:0;
+    right:0;
+    margin-top: 85px;
   }
-
-  .blink {
-    animation: blinker 1s linear infinite;
-  }
-  @keyframes blinker {
-    50% { opacity: 0; }
-  }
-
-}
-
-.spacer {
 
 }

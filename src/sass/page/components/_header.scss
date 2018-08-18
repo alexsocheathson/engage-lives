@@ -1,0 +1,17 @@
+.header {
+    margin-bottom: 10px;
+    
+    p {
+        border-bottom: solid 1px #f5f1ed;
+        margin-top: 35px;
+        font-size: 20px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        
+        @include breakpoint(large){
+            font-size: 30px;
+        }
+    
+    }
+}

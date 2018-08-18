@@ -1,0 +1,31 @@
+.banner {
+  padding: 0px;
+  width: 100%;
+  background-color: #f5f1ed;
+  text-align: center;
+
+  h3 {
+    font-family: CormorantInfant;
+    font-size: 60px;
+    font-weight: 500;
+    color: $large-text;
+    padding-top: 27px;
+    margin-bottom: 0;
+
+    @include breakpoint(medium) {
+      font-size: 80px;
+    }
+  }
+
+  p {
+    font-size: 20px;
+    font-weight: 300;
+    color: $small-text;
+    padding-bottom: 25px;
+    margin-bottom: 0;
+
+    @include breakpoint(medium) {
+      font-size: 30px;
+    }
+  }
+}

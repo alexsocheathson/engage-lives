@@ -1,0 +1,52 @@
+.event {
+  background-color: #f5f1ed;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 60px;
+
+  .title {
+    font-size: 30px;
+    line-height: 0.74;
+    margin-top: 30px;
+  }
+
+  .date {
+    font-size: 20px;
+    font-weight: 300;
+  }
+
+  // No longer flex
+  .flex-row {
+    margin-top: 10px;
+    margin-bottom: 20px;
+
+    .description {
+      font-size: 20px;
+      font-weight: 300;
+      margin: auto;
+    }
+
+    img {
+      width: 300px;
+      height: 100%;
+      display: none;
+
+      margin: 0 auto;
+      // justify-content: center;
+      // flex-direction: column;
+
+      @include breakpoint(large) {
+        padding-right: 70px;
+        display: inline-block;
+      }
+    }
+  }
+
+  a,
+  .url {
+    color: #047911;
+    font-weight: 300;
+    font-size: 15px;
+    margin-bottom: 30px;
+  }
+}
