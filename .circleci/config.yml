@@ -20,20 +20,10 @@ jobs:
           paths:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
-        
-      # - run:
-      #     name: test
-      #     command: echo "no tests"
 
       - run:
           name: build - gatsby 
           command: gatsby build    
-
-      # - run:
-      #     name: Install awscli
-      #     command: |
-      #         sudo apt-get install python-pip python-dev
-      #         sudo pip install awscli
 
       - run: 
           name: Deploy To Production
