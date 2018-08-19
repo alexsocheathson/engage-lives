@@ -16,3 +16,4 @@ yarn-error.log
 gatsby-config.js
 
 .firebase/
+.env*

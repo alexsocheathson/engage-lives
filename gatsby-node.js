@@ -4,6 +4,8 @@
  * See: https://www.gatsbyjs.org/docs/node-apis/
  */
 
+ 
+
  // Note: Not needed becuase list will link to church's site. Keep in case this changes. Slug fields have been removed.
 
 // exports.onCreateNode = ({ node, getNode }) => {
