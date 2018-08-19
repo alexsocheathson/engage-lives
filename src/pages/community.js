@@ -15,7 +15,7 @@ class CommunityAction extends React.Component {
             <img className="cell small-12 large-4" src={community.node.image.file.url} alt="event image"/>
           </div>
           <div className="cell small-12 url">
-            <p>{community.node.url}</p>
+            <a href={community.node.url}>{community.node.url}</a>
           </div>
         </div>
       </div>
@@ -62,7 +62,6 @@ export const query = graphql`
           eventDetails{
             eventDetails
           }
-          locationChurch
           image {
             file {
               url

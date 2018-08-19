@@ -8,14 +8,13 @@
   .logo {
     font-size: 20px;
 
-    @include breakpoint(medium){
+    @include breakpoint(medium) {
       font-size: 30px;
     }
 
-    @include breakpoint(large){
+    @include breakpoint(large) {
       font-size: 45px;
     }
-
   }
 
   a {
@@ -25,30 +24,19 @@
 
   .top-bar-right {
     font-size: 17px;
-    display: none;
-
-    .mobile {
-      display: inline-block;
-    }
-
+    display: inline-block;
 
     @include breakpoint(medium) {
       font-size: 10px;
-      display: inline-block;
+    }
 
-      .mobile {
-        display: none;
-      }
-
-      @include breakpoint(large) {
-        font-size: 15px;
-      }
-
+    @include breakpoint(large) {
+      font-size: 15px;
     }
   }
 }
 
-.top-bar{
+.top-bar {
   background-color: $background-color;
   //background-color: #172133;
 
@@ -57,5 +45,4 @@
   ul {
     background-color: #20232a;
   }
-
 }
