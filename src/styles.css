@@ -6130,7 +6130,7 @@ html.is-reveal-open {
     color: #505050;
     font-weight: 500; }
   .nav .top-bar-right {
-    font-size: 17px;
+    font-size: 6px;
     display: inline-block; }
     @media print, screen and (min-width: 40em) {
       .nav .top-bar-right {

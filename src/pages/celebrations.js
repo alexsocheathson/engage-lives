@@ -16,6 +16,9 @@ class Celebration extends React.Component {
             <p className="cell small-12 large-8 description">
               {celebration.node.eventDetails.eventDetails}
             </p>
+            {/* <div className="cell small-12 large-8 description">
+            dangerouslySetInnerHTML={{ __html: celebration.node.eventDetails.childMarkdownRemark.html }}
+            </div> */}
             <img
               className="cell small-12 large-4"
               src={celebration.node.image.file.url}

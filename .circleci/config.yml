@@ -1,0 +1,40 @@
+version: 2
+jobs:
+  build:
+    branches:
+        only: master
+    docker:
+      # specify the version you desire here
+      - image: circleci/node:7.10
+    steps:
+      - checkout
+      - restore_cache:
+          key: dependency-cache-{{ checksum "package.json" }}
+          key: v1-dependencies-
+
+      - run: 
+          name: Install dependencies
+          command: npm install
+
+      - save_cache:
+          paths:
+            - node_modules
+          key: v1-dependencies-{{ checksum "package.json" }}
+        
+      # - run:
+      #     name: test
+      #     command: echo "no tests"
+
+      - run:
+          name: build - gatsby 
+          command: npm run-script build    
+
+      # - run:
+      #     name: Install awscli
+      #     command: |
+      #         sudo apt-get install python-pip python-dev
+      #         sudo pip install awscli
+
+      - run: 
+          name: Deploy To Production
+          command: - ./node_modules/.bin/firebase deploy --token=$FIREBASE_TOKEN --non-interactive

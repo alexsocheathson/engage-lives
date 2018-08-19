@@ -1,15 +1,8 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
-import $ from 'jquery'
-import 'foundation-sites'
-
 class Header extends React.Component {
-  componentDidMount() {
-    $(document).foundation()
-  }
-
-  render() {
+render() {
     return (
       <div className="nav">
         <div className="grid-container">
@@ -19,7 +12,7 @@ class Header extends React.Component {
                 <a href="/">Engage Lives</a>
               </div>
             </div>
-            <div className="top-bar-right show-for-medium">
+            <div className="top-bar-right show-for-small">
               <div className="menu">
                 <li>
                   <Link to="/education/">Worship</Link>
@@ -38,8 +31,7 @@ class Header extends React.Component {
                 </li>
               </div>
             </div>
-            <div className="top-bar-right show-for-small-only">
-              {/* <div className="menu"> */}
+            {/* <div className="top-bar-right show-for-small-only">
               <ul
                 className="vertical menu"
                 data-responsive-menu=" small-accordion"
@@ -65,8 +57,7 @@ class Header extends React.Component {
                   </ul>
                 </li>
               </ul>
-              {/* </div> */}
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
