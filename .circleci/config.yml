@@ -27,7 +27,7 @@ jobs:
 
       - run:
           name: build - gatsby 
-          command: npm run-script build    
+          command: gatsby build    
 
       # - run:
       #     name: Install awscli
