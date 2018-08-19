@@ -23,7 +23,7 @@ jobs:
 
       - run:
           name: build - gatsby 
-          command: gatsby build    
+          command: npm run build     
 
       - run: 
           name: Deploy To Production
