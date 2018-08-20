@@ -14,7 +14,7 @@ jobs:
 
       - run:
           key: Firebase
-          command: npm install -g firebase-tools
+          command: sudo npm install -g firebase-tools
 
       - run: 
           name: Install dependencies
