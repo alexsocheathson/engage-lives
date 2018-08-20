@@ -16,6 +16,10 @@ jobs:
           name: Install dependencies
           command: npm install
 
+    - run: 
+          name: Install dependencies
+          command: npm install --dev
+          
       - save_cache:
           paths:
             - node_modules
