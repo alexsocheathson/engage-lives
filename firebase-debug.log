@@ -1,0 +1,55 @@
+[debug] [2018-08-20T00:13:59.760Z] ----------------------------------------------------------------------
+[debug] [2018-08-20T00:13:59.762Z] Command:       /usr/local/bin/node /usr/local/bin/firebase login:ci
+[debug] [2018-08-20T00:13:59.762Z] CLI Version:   4.1.2
+[debug] [2018-08-20T00:13:59.762Z] Platform:      darwin
+[debug] [2018-08-20T00:13:59.762Z] Node Version:  v8.11.3
+[debug] [2018-08-20T00:13:59.762Z] Time:          Sun Aug 19 2018 19:13:59 GMT-0500 (CDT)
+[debug] [2018-08-20T00:13:59.762Z] ----------------------------------------------------------------------
+[debug] 
+[info] 
+[info] Visit this URL on any device to log in:
+[info] https://accounts.google.com/o/oauth2/auth?client_id=563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com&scope=email%20openid%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloudplatformprojects.readonly%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Ffirebase%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloud-platform&response_type=code&state=585721583&redirect_uri=http%3A%2F%2Flocalhost%3A9005
+[info] 
+[info] Waiting for authentication...
+[debug] [2018-08-20T00:14:16.268Z] >>> HTTP REQUEST POST https://accounts.google.com/o/oauth2/token  
+
+[debug] [2018-08-20T00:14:16.654Z] <<< HTTP RESPONSE 200
+[info] 
+[info] ✔  Success! Use this token to login on a CI server:
+
+1/u5E09NZ8pIcdGtBQp0UAsDJ9ekWe6NEN3fMawf24NLw
+
+Example: firebase deploy --token "$FIREBASE_TOKEN"
+
+[debug] [2018-08-20T00:14:58.277Z] ----------------------------------------------------------------------
+[debug] [2018-08-20T00:14:58.279Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy --token 1/u5E09NZ8pIcdGtBQp0UAsDJ9ekWe6NEN3fMawf24NLw
+[debug] [2018-08-20T00:14:58.279Z] CLI Version:   4.1.2
+[debug] [2018-08-20T00:14:58.279Z] Platform:      darwin
+[debug] [2018-08-20T00:14:58.279Z] Node Version:  v8.11.3
+[debug] [2018-08-20T00:14:58.280Z] Time:          Sun Aug 19 2018 19:14:58 GMT-0500 (CDT)
+[debug] [2018-08-20T00:14:58.280Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-08-20T00:14:58.288Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-08-20T00:14:58.288Z] > authorizing via --token option
+[debug] [2018-08-20T00:14:58.289Z] > refreshing access token with scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-08-20T00:14:58.289Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+
+[debug] [2018-08-20T00:14:58.622Z] <<< HTTP RESPONSE 200
+[debug] [2018-08-20T00:14:58.623Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/engage-lives  
+ 
+[debug] [2018-08-20T00:14:59.113Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'engage-lives'...
+[info] 
+[info] i  deploying hosting
+[debug] [2018-08-20T00:14:59.117Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/engage-lives/versions  
+
+[debug] [2018-08-20T00:15:00.049Z] <<< HTTP RESPONSE 200
+[info] i  hosting: found 52 files in public directory
+[debug] [2018-08-20T00:15:00.343Z] [hosting] hash cache [0] stored for 52 files
+[debug] [2018-08-20T00:15:00.344Z] [hosting][hash queue][FINAL]
+[debug] [2018-08-20T00:15:00.344Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/engage-lives/versions/d11569e1ceff8189:populateFiles  
+ <request body omitted>
+[debug] [2018-08-20T00:15:01.157Z] <<< HTTP RESPONSE 200
+[debug] [2018-08-20T00:15:01.160Z] [hosting][populate queue][FINAL]
+[debug] [2018-08-20T00:15:01.160Z] [hosting] uploads queued: 2
