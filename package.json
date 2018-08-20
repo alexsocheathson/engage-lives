@@ -2,6 +2,7 @@
   "name": "engage-lives",
   "version": "1.0.0",
   "dependencies": {
+    "firebase": "^5.4.0",
     "foundation-sites": "^6.5.0-rc.2",
     "fs": "0.0.1-security",
     "gatsby": "^1.9.277",
