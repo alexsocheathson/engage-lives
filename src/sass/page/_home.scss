@@ -23,14 +23,15 @@
 
   p {
     color: $large-text;
-    font-size: 10px;
-    margin-top: 25px;
+    font-size: 12px;
+    margin-top: 35px;
     // margin-bottom: 20px;
     text-align: center;
     font-weight: 300;
 
     @include breakpoint(medium) {
       font-size: 20px;
+      margin-top: 25;
     }
 
     @include breakpoint(large) {

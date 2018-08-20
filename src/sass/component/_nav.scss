@@ -23,11 +23,11 @@
   }
 
   .top-bar-right {
-    font-size: 6px;
+    font-size: 12px;
     display: inline-block;
 
     @include breakpoint(medium) {
-      font-size: 10px;
+      font-size: 12px;
     }
 
     @include breakpoint(large) {

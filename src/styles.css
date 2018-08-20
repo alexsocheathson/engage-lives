@@ -5961,13 +5961,14 @@ html.is-reveal-open {
         font-size: 100px; } }
   .home p {
     color: #505050;
-    font-size: 10px;
-    margin-top: 25px;
+    font-size: 12px;
+    margin-top: 35px;
     text-align: center;
     font-weight: 300; }
     @media print, screen and (min-width: 40em) {
       .home p {
-        font-size: 20px; } }
+        font-size: 20px;
+        margin-top: 25; } }
     @media print, screen and (min-width: 64em) {
       .home p {
         font-size: 35px; } }
@@ -6130,11 +6131,11 @@ html.is-reveal-open {
     color: #505050;
     font-weight: 500; }
   .nav .top-bar-right {
-    font-size: 6px;
+    font-size: 12px;
     display: inline-block; }
     @media print, screen and (min-width: 40em) {
       .nav .top-bar-right {
-        font-size: 10px; } }
+        font-size: 12px; } }
     @media print, screen and (min-width: 64em) {
       .nav .top-bar-right {
         font-size: 15px; } }

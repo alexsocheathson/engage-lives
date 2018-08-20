@@ -2,7 +2,7 @@ import React from 'react'
 import Link from 'gatsby-link'
 
 class Header extends React.Component {
-render() {
+  render() {
     return (
       <div className="nav">
         <div className="grid-container">
@@ -14,21 +14,11 @@ render() {
             </div>
             <div className="top-bar-right show-for-small">
               <div className="menu">
-                <li>
-                  <Link to="/education/">Worship</Link>
-                </li>
-                <li>
-                  <Link to="/wellness/">Wellness</Link>
-                </li>
-                <li>
-                  <Link to="/celebrations/">Celebrations</Link>
-                </li>
-                <li>
-                  <Link to="/community/">Learning and Growth</Link>
-                </li>
-                <li>
-                  <Link to="/service/">Service Opportunities</Link>
-                </li>
+                    <Link to="/education/">Worship</Link>
+                    <Link to="/wellness/">Wellness</Link>
+                    <Link to="/celebrations/">Celebrations</Link>
+                    <Link to="/community/">Learning and Growth</Link>
+                    <Link to="/service/">Service Opportunities</Link>
               </div>
             </div>
             {/* <div className="top-bar-right show-for-small-only">
