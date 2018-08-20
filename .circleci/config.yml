@@ -16,8 +16,8 @@ jobs:
           name: Install dependencies
           command: npm install
 
-    - run: 
-          name: Install dependencies
+     - run: 
+          name: Install dependencies 2
           command: npm install --dev
           
       - save_cache:
