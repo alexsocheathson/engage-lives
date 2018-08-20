@@ -2,7 +2,6 @@ import React from 'react'
 
 class Education extends React.Component {
   render(){
-    console.log(this)
     const pageContent = this.props.data.allContentfulWorshipPage.edges
     const educationContent = this.props.data.allContentfulWorship.edges
 

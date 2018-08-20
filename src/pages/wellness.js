@@ -2,7 +2,6 @@ import React from 'react'
 
 class Wellness extends React.Component {
   render() {
-    console.log(this)
     const pageContent = this.props.data.allContentfulWellnessPage.edges
     const wellnessContent = this.props.data.allContentfulWellness.edges
 
