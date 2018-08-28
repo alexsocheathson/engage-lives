@@ -64,7 +64,7 @@ export const query = graphql`
         }
       }
     }
-    allContentfulCelebrations(sort: { fields: [createdAt], order: ASC }) {
+    allContentfulCelebrations(sort: { fields: [createdAt], order: DESC }) {
       edges {
         node {
           eventName

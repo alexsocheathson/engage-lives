@@ -55,7 +55,7 @@ export const query = graphql`
         }
       }
     }
-    allContentfulWellness(sort: {fields: [createdAt] order: ASC}){
+    allContentfulWellness(sort: {fields: [createdAt] order: DESC}){
       edges {
         node {
           eventTitle
