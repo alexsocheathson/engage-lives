@@ -45,7 +45,7 @@ export const query = graphql`
         }
       }
     }
-    allContentfulWorship(sort: {fields: [createdAt] order: ASC}){
+    allContentfulWorship{
       edges {
        node {
           church

@@ -53,7 +53,7 @@ export const query = graphql`
         }
       }
     }
-    allContentfulLearningAndGrowth (sort: {fields: [createdAt] order: ASC}) {
+    allContentfulLearningAndGrowth(sort: { fields: [date], order: ASC }) {
       edges {
        node {
           eventName

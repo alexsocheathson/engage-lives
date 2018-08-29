@@ -62,9 +62,7 @@ export const query = graphql`
         }
       }
     }
-    allContentfulServiceOpportunities(
-      sort: { fields: [createdAt], order: ASC }
-    ) {
+    allContentfulServiceOpportunities(sort: { fields: [date], order: ASC }){
       edges {
         node {
           eventName
