@@ -5,35 +5,39 @@
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
-
 <url>
-  <loc>https://engage-lives.firebaseapp.com/</loc>
-  <lastmod>2018-08-20T01:03:38+00:00</lastmod>
+  <loc>https://engagelives.org/</loc>
+  <lastmod>2018-08-29T19:19:38+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://engage-lives.firebaseapp.com/education/</loc>
-  <lastmod>2018-08-20T01:03:38+00:00</lastmod>
+  <loc>https://engagelives.org/education/</loc>
+  <lastmod>2018-08-29T19:19:38+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://engage-lives.firebaseapp.com/wellness/</loc>
-  <lastmod>2018-08-20T01:03:38+00:00</lastmod>
+  <loc>https://engagelives.org/wellness/</loc>
+  <lastmod>2018-08-29T19:19:38+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://engage-lives.firebaseapp.com/celebrations/</loc>
-  <lastmod>2018-08-20T01:03:38+00:00</lastmod>
+  <loc>https://engagelives.org/celebrations/</loc>
+  <lastmod>2018-08-29T19:19:38+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://engage-lives.firebaseapp.com/community/</loc>
-  <lastmod>2018-08-20T01:03:38+00:00</lastmod>
+  <loc>https://engagelives.org/community/</loc>
+  <lastmod>2018-08-29T19:19:39+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://engage-lives.firebaseapp.com/service/</loc>
-  <lastmod>2018-08-20T01:03:38+00:00</lastmod>
+  <loc>https://engagelives.org/youth/</loc>
+  <lastmod>2018-08-29T19:19:38+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://engagelives.org/service/</loc>
+  <lastmod>2018-08-29T19:19:39+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 
