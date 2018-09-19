@@ -20,6 +20,7 @@ class Header extends React.Component {
                     <Link to="/community/">Learning and Growth</Link>
                     <Link to="/youth/">Youth and Family</Link>
                     <Link to="/service/">Service Opportunities</Link>
+                    <Link to="/advocacy/">Advocacy</Link>
               </div>
             </div>
             {/* <div className="top-bar-right show-for-small-only">

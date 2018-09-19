@@ -33,7 +33,7 @@ class Advocacy extends React.Component {
       <div>
         <div className="banner">
           <div className="grid-container">
-            <h3>Public Advocacy</h3>
+            <h3>Advocacy</h3>
             <p className="animated fadeIn slow">
               {pageContent['0'].node.heading}
             </p>
