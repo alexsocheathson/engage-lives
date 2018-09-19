@@ -6138,7 +6138,7 @@ html.is-reveal-open {
         font-size: 12px; } }
     @media print, screen and (min-width: 64em) {
       .nav .top-bar-right {
-        font-size: 15px; } }
+        font-size: 12px; } }
 
 .top-bar {
   background-color: #FFFFFF;
