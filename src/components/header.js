@@ -45,6 +45,9 @@ class Header extends React.Component {
                     <li>
                       <Link to="/service/">Service Opportunities</Link>
                     </li>
+                    <li>
+                      <Link to="/advocacy/">Public Advocacy</Link>
+                    </li>
                   </ul>
                 </li>
               </ul>
